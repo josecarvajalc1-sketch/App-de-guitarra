@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Partituras: Nivel 6 - Domina la Guitarra Clásica</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1193d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            display: ["Manrope", "sans-serif"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+  <div class="flex h-screen flex-col">
+    <header class="sticky top-0 z-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="flex items-center p-4">
+        <a href="partituras.html" class="flex h-11 w-11 items-center justify-center rounded-full text-gray-600 dark:text-gray-300">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </a>
+        <h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white">Partituras: Nivel 6</h1>
+        <div class="w-11"></div>
+      </div>
+    </header>
+    <main class="flex-1 flex items-center justify-center text-center p-4 pb-24">
+      <div>
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Próximamente</h2>
+        <p class="mt-2 text-gray-600 dark:text-gray-400">Las partituras para el Nivel 6 estarán disponibles pronto.</p>
+      </div>
+    </main>
+    <footer class="sticky bottom-0 z-20 w-full border-t border-gray-800 bg-background-dark/80 pb-safe backdrop-blur-sm">
+      <nav class="flex items-center justify-around p-2">
+        <a href="diagnostico.html" class="flex flex-col items-center justify-center rounded-lg px-4 py-2 text-gray-400 transition-colors">
+          <span class="material-symbols-outlined">home</span>
+          <span class="text-xs">Inicio</span>
+        </a>
+        <a href="niveles.html" class="flex flex-col items-center justify-center rounded-lg px-4 py-2 text-gray-400 transition-colors">
+          <span class="material-symbols-outlined">school</span>
+          <span class="text-xs">Niveles</span>
+        </a>
+        <a href="practica.html" class="flex flex-col items-center justify-center rounded-lg px-4 py-2 text-gray-400 transition-colors">
+          <span class="material-symbols-outlined">timer</span>
+          <span class="text-xs">Práctica</span>
+        </a>
+        <a href="tecnica.html" class="flex flex-col items-center justify-center rounded-lg px-4 py-2 text-gray-400 transition-colors">
+          <span class="material-symbols-outlined">construction</span>
+          <span class="text-xs">Técnica</span>
+        </a>
+        <a href="partituras.html" class="flex flex-col items-center justify-center rounded-lg bg-primary/10 px-4 py-2 text-primary transition-colors">
+          <span class="material-symbols-outlined">music_note</span>
+          <span class="text-xs">Repertorio</span>
+        </a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
